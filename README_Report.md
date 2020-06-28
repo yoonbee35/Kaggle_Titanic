@@ -50,7 +50,7 @@ Null값이 존재하는 data : Age, Cabin, Embarked(적음), Fare(test data에�
   
   
 **Feature** | **Correlation Coefficient**  
-:----: | ----
+:----: | :----:
 Survived | 1.000000 
 Fare | 0.257307      
 Parch |  0.081629   
