@@ -47,15 +47,18 @@ Null값이 존재하는 data : Age, Cabin, Embarked(적음), Fare(test data에�
 9. 대부분의 탑승 인원이 100달러 이하의 요금을 지불 ($512 이상의 요금을 지불한 사람은 없음)<br>
 10. 상관관계파악 결과 **Pclass와 Fare이 비교적 높은 상관관계를 보임, Passenger Id는 생존 여부와 거의 관계가 없음** <br>
 <Correlation>
-| **Feature** | **Correlation Coefficient** |
-|:-----------:|-----------------------------|
-|Survived     |    1.000000                 |
-|Fare         |    0.257307                 |
-|Parch        |    0.081629                 |
-|PassengerId  |  -0.005007                  |
-|SibSp        |    -0.035322                |
-|Age          |      -0.077221              |
-|Pclass       |  -0.338481                  |
+  
+  
+**Feature** | **Correlation Coefficient**  
+:----: | ----
+Survived | 1.000000 
+Fare | 0.257307      
+Parch |  0.081629   
+PassengerId | -0.005007 
+SibSp | 0.035322  
+Age | -0.077221  
+Pclass | -0.338481
+             
 
 
 ## 2. 데이터 전처리_Data_Preprocess.ipynb
@@ -81,6 +84,10 @@ Null값이 존재하는 data : Age, Cabin, Embarked(적음), Fare(test data에�
 
 * **feature로 사용할 object type의 데이터를 numeric data로 변환**
 `Sex`, `Embarked` : numeric data로 변환
+
+
+
+
 
 
 
