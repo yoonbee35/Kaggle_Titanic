@@ -5,7 +5,7 @@
 ## 학습 계획
 [1] 데이터 분석 <br>
 [2] 데이터 전처리<br>
-[3] 모델 선택 및 결과 비교 <br>
+[3] 학습 모델 선택 및 결과 비교 <br>
 [4] 모델 미세 조정<br>
 [5] 결과 분석<br>
 [6] 결론<br>
@@ -85,8 +85,11 @@ Pclass | -0.338481
 `SibSp`와 `Parch`의 경우 Family(가족)이라는 feature로 묶일 수 있기 때문에 결합br>
 
 * **object type의 데이터를 numeric data로 (Sex, Embarked)**<br>
-`Sex`, `Embarked` : numeric data로 변환br>
+`Sex`, `Embarked` : numeric data로 변환<br>
 
+<br>
+
+## 3. 학습 모델 선택 및 결과 비교_train_Example.ipynb
 
 
 
