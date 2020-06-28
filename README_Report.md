@@ -80,7 +80,7 @@ Pclass | -0.338481
 데이터가 너무 세세하게 나누어져 있어 feature로 <br>
 `Survive`와의 관계를 바탕으로 범주형 데이터로 만들어 일반화<br>
 범주화함으로써 특성 스케일링 가능 <br>
-`Age` : 
+Age : 
 
 AgeBand | Survived
 -- | --
@@ -91,7 +91,7 @@ AgeBand | Survived
 (64.0, 80.0] | 0.090909
 
 <br>
-`Fare` :
+ Fare :
 
 FareBand | Survived
 -- | --
