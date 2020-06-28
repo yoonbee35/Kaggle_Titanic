@@ -62,27 +62,27 @@ Pclass | -0.338481
 
 
 ## 2. 데이터 전처리_Data_Preprocess.ipynb
-* **필요없는 데이터 제거 => feature로 사용하지 않음**
-`Ticket` : 생존 여부와 관계 없음
-`Name` , `PassengerId` : 모두 다른 값을 가지고 있고 생존 여부과 관계 없음 
-`Cabin` : train, test데이터 모두 너무 많은 Null값을 가지고 있음
+* **필요없는 데이터 제거 => feature로 사용하지 않음**<br>
+`Ticket` : 생존 여부와 관계 없음<br>
+`Name` , `PassengerId` : 모두 다른 값을 가지고 있고 생존 여부과 관계 없음 <br>
+`Cabin` : train, test데이터 모두 너무 많은 Null값을 가지고 있음<br>
 
-* **Age와 Embarked는 생존여부와 관계가 있다고 생각되기 때문에 Null값을 채워넣어야 함**
-**더 자세히 알아보고 수정할 것**`Age` : `Sex(0,1)`와 `Pcalss(1,2,3)`를 이용하여 `Age`를 예측한 뒤 median값을 이용하여 결측치 채우기
-- `Pclass`가 survived와 가장 높은 상관관계를 가지고 있음
-- `Sex`와 `Pclass`를 연관지어 `Age`를 예측하는 것이 가장 합리적이라 생각
+* **Age와 Embarked는 생존여부와 관계가 있다고 생각되기 때문에 Null값을 채워넣어야 함**<br>
+**더 자세히 알아보고 수정할 것**`Age` : `Sex(0,1)`와 `Pcalss(1,2,3)`를 이용하여 `Age`를 예측한 뒤 median값을 이용하여 결측치 채우기<br>
+ `Pclass`가 survived와 가장 높은 상관관계를 가지고 있음<br>
+ `Sex`와 `Pclass`를 연관지어 `Age`를 예측하는 것이 가장 합리적이라 생각<br>
 
-`Embarked` : 최빈값으로 결측치 채우기
+`Embarked` : 최빈값으로 결측치 채우기<br>
 
-`Fare` : test 파일 내 모든 `Fare`값의 mdeidan 값으로 결측치 채우기
+`Fare` : test 파일 내 모든 `Fare`값의 mdeidan 값으로 결측치 채우기<br>
 
-* **Age와 Fare는 너무 세세하게 값이 나누어져 있기 때문에 데이터로 사용하기 힘듦**
-`Survive`와의 관계를 바탕으로 범주형 데이터로 만들어 일반화
+* **Age와 Fare는 너무 세세하게 값이 나누어져 있기 때문에 데이터로 사용하기 어려움**<br>
+`Survive`와의 관계를 바탕으로 범주형 데이터로 만들어 일반화<br>
 `Age`는 5개, `Fare`은 4개의 범주로 나누어 0~4까지의 numeric data로 변환 //특성 scaling 역할
 
-* **`SibSp`와 `Parch`의 경우 Family(가족)이라는 feature로 묶일 수 있기 때문에 결합**
+* **`SibSp`와 `Parch`의 경우 Family(가족)이라는 feature로 묶일 수 있기 때문에 결합**<br>
 
-* **feature로 사용할 object type의 데이터를 numeric data로 변환**
+* **feature로 사용할 object type의 데이터를 numeric data로 변환**<br>
 `Sex`, `Embarked` : numeric data로 변환
 
 
