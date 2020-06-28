@@ -10,7 +10,7 @@
 [5] 결과 분석<br>
 [6] 결론<br>
 
-
+<br>
 ## 1. 데이터 분석_Data EDA.ipynb
 * **Data Shape** <br>
 train : (891, 12) <br>
@@ -59,7 +59,7 @@ SibSp | 0.035322
 Age | -0.077221  
 Pclass | -0.338481
              
-
+<br>
 
 ## 2. 데이터 전처리_Data_Preprocess.ipynb
 * **필요없는 데이터 제거 => feature로 사용 X**<br>
