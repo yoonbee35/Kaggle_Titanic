@@ -5,7 +5,7 @@
 ## 학습 계획
 [1] 데이터 분석 <br>
 [2] 데이터 전처리<br>
-[3] 모델 선택 및 비교. 결과 비교 및 <br>
+[3] 모델 선택 및 결과 비교 <br>
 [4] 모델 미세 조정<br>
 [5] 결과 분석<br>
 [6] 결론<br>
@@ -46,14 +46,16 @@ Null값이 존재하는 data : Age, Cabin, Embarked(적음), Fare(test data에�
 8. 3등석 탑승 인원이 가장 많음<br>
 9. 대부분의 탑승 인원이 100달러 이하의 요금을 지불 ($512 이상의 요금을 지불한 사람은 없음)<br>
 10. 상관관계파악 결과 **Pclass와 Fare이 비교적 높은 상관관계를 보임, Passenger Id는 생존 여부와 거의 관계가 없음** <br>
-<i> <Correlation>
-Survived       1.000000<br>
-Fare           0.257307<br>
-Parch          0.081629<br>
-PassengerId   -0.005007<br>
-SibSp         -0.035322<br>
-Age           -0.077221<br>
-Pclass        -0.338481<br> <i>
+<Correlation>
+| **Feature** | **Correlation Coefficient** |
+|:-----------:|-----------------------------|
+|Survived     |    1.000000                 |
+|Fare         |    0.257307                 |
+|Parch        |    0.081629                 |
+|PassengerId  |  -0.005007                  |
+|SibSp        |    -0.035322                |
+|Age          |      -0.077221              |
+|Pclass       |  -0.338481                  |
 
 
 ## 2. 데이터 전처리_Data_Preprocess.ipynb
