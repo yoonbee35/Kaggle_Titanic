@@ -59,6 +59,8 @@ Pclass | -0.338481
              
 
 
+
+
 ## 2. 데이터 전처리_Data_Preprocess.ipynb
 * **필요없는 데이터 제거 => feature로 사용 X**<br>
 `Ticket` : 생존 여부와 관계 없음<br>
