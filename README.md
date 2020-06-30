@@ -5,12 +5,10 @@
 ## 학습 계획
 [1] 데이터 분석 <br>
 [2] 데이터 전처리<br>
-[3] 학습 모델 선택 및 결과 비교 <br>
-[4] 모델 미세 조정<br>
-[5] 결과 분석<br>
-[6] 결론<br>
+[3] 학습 모델 선택 및 결과 분석
+[4] 결론<br>
 
-<br>
+
 ## 1. 데이터 분석_Data EDA.ipynb
 * **Data Shape** <br>
 train : (891, 12) <br>
@@ -59,7 +57,9 @@ SibSp | 0.035322
 Age | -0.077221  
 Pclass | -0.338481
              
-<br>
+
+
+
 
 ## 2. 데이터 전처리_Data_Preprocess.ipynb
 * **필요없는 데이터 제거 => feature로 사용 X**<br>
@@ -90,7 +90,6 @@ AgeBand | Survived
 (48.0, 64.0] | 0.434783
 (64.0, 80.0] | 0.090909
 
-<br>
  Fare :
 
 FareBand | Survived
@@ -106,8 +105,8 @@ FareBand | Survived
 * **object type의 데이터를 numeric data로 (Sex, Embarked)**<br>
 `Sex`, `Embarked` : numeric data로 변환<br>
 
-<br>
-## 최종 Train_dataset sample
+
+### 최종 Train_dataset sample
 
   | **Survived** | **Pclass** | **Sex** | **Age** | **SibSp** | **Parch** | **Fare** | **Embarked** | **Family**
 -- | -- | -- | -- | -- | -- | -- | -- | -- | --
