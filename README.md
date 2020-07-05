@@ -8,6 +8,8 @@
 [3] 학습 모델 선택 및 결과 분석
 [4] 결론<br>
 
+<br><br>
+
 
 ## 1. 데이터 분석_Data EDA.ipynb
 * **Data Shape** <br>
@@ -58,7 +60,7 @@ Age | -0.077221
 Pclass | -0.338481
              
 
-
+<br><br>
 
 
 ## 2. 데이터 전처리_Data_Preprocess.ipynb
@@ -75,6 +77,7 @@ Pclass | -0.338481
   2. `Embarked` : 최빈값으로 결측치 채우기<br>
 
   3. `Fare` : test 파일 내 모든 `Fare`값의 mdeidan 값으로 결측치 채우기<br>
+
 
 * **데이터 범주화 (Age, Fare)**<br>
 데이터가 너무 세세하게 나누어져 있어 feature로 <br>
@@ -122,7 +125,21 @@ FareBand | Survived
 9 | 1 | 2 | 1 | 0 | 1 | 0 | 2 | 1 | 2
 
 
+<br><br>
+
 ## 3. 학습 모델 선택 및 결과 비교_train_Example.ipynb
+* 다양한 모델을 학습해보고 cross_validation 결과로 최종 선정 모델 결정==> **SVM**<br>
+![image](https://user-images.githubusercontent.com/55186800/86536554-8ab37a00-bf23-11ea-9875-820e5214b064.png)<br>
+
+* SVM (기계학습 책 참고해서 이유 쓰기)
+<model 선택 이유>
+ 1. data preprocessing을 통해 feature들의 scaling을 완료한 상태 (모든 feature가 0과100사이)
+ 2. 891개의 많지 않은 데이터이기 때문에 적은 데이터에도 효율적으로 동작할 수 있는 Support Vector Machine 선택
+ 3. 등등 이유 더 생각해보기
+
+* Model ensemvle : 높은 정확도를 보였던 3개의 model을 ensemble (SVM, Random Forest, Logistic Regression)
+1. `VotingClassifier` 사용 : (특징 쓰기)
+2. 직접 prediction_proba를 출력하고 averaging하여 결과 출력
 
 
 
@@ -130,6 +147,7 @@ FareBand | Survived
 
 
 
-reference : 
+
+reference : <br>
 [Subinium Tutorial] Titanic (Intermediate) : https://www.kaggle.com/subinium/subinium-tutorial-titanic-intermediate
 [kaggle] 타이타닉 생존자 예측, python : https://velog.io/@skyepodium/kaggle-%ED%83%80%EC%9D%B4%ED%83%80%EB%8B%89-%EC%83%9D%EC%A1%B4%EC%9E%90-%EC%98%88%EC%B8%A1
