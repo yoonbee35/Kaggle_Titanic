@@ -80,9 +80,9 @@ Pclass | -0.338481
 
 
 * **데이터 범주화 (Age, Fare)**<br>
-데이터가 너무 세세하게 나누어져 있어 feature로 <br>
-`Survive`와의 관계를 바탕으로 범주형 데이터로 만들어 일반화<br>
-범주화함으로써 특성 스케일링 가능 <br>
+1. 데이터가 너무 세세하게 나누어져 있어 feature로 <br>
+2. `Survive`와의 관계를 바탕으로 범주형 데이터로 만들어 일반화<br>
+3. 범주화를 통해 특성 스케일링 가능 <br>
 Age : 
 
 AgeBand | Survived
@@ -131,23 +131,35 @@ FareBand | Survived
 * 다양한 모델을 학습해보고 cross_validation 결과로 최종 선정 모델 결정==> **SVM**<br>
 ![image](https://user-images.githubusercontent.com/55186800/86536554-8ab37a00-bf23-11ea-9875-820e5214b064.png)<br>
 
-* SVM (기계학습 책 참고해서 이유 쓰기)
+* SVM 
 <model 선택 이유>
  1. data preprocessing을 통해 feature들의 scaling을 완료한 상태 (모든 feature가 0과100사이)
  2. 891개의 많지 않은 데이터이기 때문에 적은 데이터에도 효율적으로 동작할 수 있는 Support Vector Machine 선택
- 3. 등등 이유 더 생각해보기
+ 3. sklearn.svm의 SVM() 사용하고 parameter는 기본값으로 설정 (C=1.0, kernel='rbf'등)
 
-* Model ensemvle : 높은 정확도를 보였던 3개의 model을 ensemble (SVM, Random Forest, Logistic Regression)
-1. `VotingClassifier` 사용 : (특징 쓰기)
-2. 직접 prediction_proba를 출력하고 averaging하여 결과 출력
-
-
+* Model ensemble : 높은 정확도를 보였던 3개의 model을 ensemble (SVM, Random Forest, Logistic Regression)
+1. `VotingClassifier` 사용 : SVM과 Random Forest, Logistic Regression 등의 model을 사용하여 soft Voting 사용
+2. 각각의 model의 class를 예측하는 probability를 출력하고 각각의 확률을 평균내어 가장 높은 확률을 보인 값으로 클래스 
 
 
+<br><br>
+
+
+## 4. 결론
+<test data 생성 결과>
+![image](https://user-images.githubusercontent.com/55186800/86795134-38e82c80-c0a8-11ea-95b4-e5bdaac66992.png)
+
+conclusion) Model Ensemble을 이용한 경우 Single Model을 이용한 정확도보다 좋은 성능을 보임
+특히, SVM는 scaling에 민감하기 때문에 data preprocessing 과정에서 데이터 범주화와 null값 채우기를 통해 적절한 scaling을 진행해줘야 함
 
 
 
 
-reference : <br>
+
+
+
+<br><br><br><br>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**reference**<br>
 [Subinium Tutorial] Titanic (Intermediate) : https://www.kaggle.com/subinium/subinium-tutorial-titanic-intermediate
 [kaggle] 타이타닉 생존자 예측, python : https://velog.io/@skyepodium/kaggle-%ED%83%80%EC%9D%B4%ED%83%80%EB%8B%89-%EC%83%9D%EC%A1%B4%EC%9E%90-%EC%98%88%EC%B8%A1
