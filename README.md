@@ -139,8 +139,7 @@ FareBand | Survived
 
 * Model ensemble : 높은 정확도를 보였던 3개의 model을 ensemble (SVM, Random Forest, Logistic Regression)
 1. `VotingClassifier` 사용 : SVM과 Random Forest, Logistic Regression 등의 model을 사용하여 soft Voting 사용
-2. 각각의 model의 class를 예측하는 probability를 출력하고 각각의 확률을 평균내어 가장 높은 확률을 보인 값으로 클래스 
-
+2. 각각의 model의 class를 예측하는 probability를 출력하고 각각의 확률을 평균내어 가장 높은 확률을 보인 값으로 클래스를 분류함
 
 <br><br>
 
