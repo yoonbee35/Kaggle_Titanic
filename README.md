@@ -80,7 +80,7 @@ Pclass | -0.338481
 
 
 * **데이터 범주화 (Age, Fare)**<br>
-1. 데이터가 너무 세세하게 나누어져 있어 feature로 <br>
+1. 데이터가 너무 세세하게 나누어져 있어 feature로 사용이 어려움<br>
 2. `Survive`와의 관계를 바탕으로 범주형 데이터로 만들어 일반화<br>
 3. 범주화를 통해 특성 스케일링 가능 <br>
 Age : 
@@ -103,7 +103,7 @@ FareBand | Survived
 (31.0, 512.329] | 0.581081
 
 * **비슷한 feature들 묶기**<br>
-`SibSp`와 `Parch`의 경우 Family(가족)이라는 feature로 묶일 수 있기 때문에 결합br>
+`SibSp`와 `Parch`의 경우 Family(가족)이라는 feature로 묶일 수 있기 때문에 결합<br>
 
 * **object type의 데이터를 numeric data로 (Sex, Embarked)**<br>
 `Sex`, `Embarked` : numeric data로 변환<br>
