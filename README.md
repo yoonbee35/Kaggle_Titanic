@@ -1,7 +1,7 @@
 # Kaggle_Titanic_ML-2020
 실행 환경 : Local/Jupyter notebook 이용
 
-## 문제 정의 : Kaggle의 Tatinic 탑승자 정보를 바탕으로 생존자(survived) 예측
+## 문제 정의 : Kaggle의 Titanic 탑승자 정보를 바탕으로 생존자(survived) 예측
 ## 학습 계획
 [1] 데이터 분석 <br>
 [2] 데이터 전처리<br>
